@@ -20,4 +20,5 @@
 
 .choose_us{
     text-align: center; /* written content aligned center as in figma design */
+    padding-top: 10%; /* add padding space between choose us written content and the image above it */
 }
