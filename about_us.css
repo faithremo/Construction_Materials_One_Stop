@@ -5,3 +5,7 @@
 .about_us{
     text-align: center; /* written content aligned center as in figma design */
 }
+
+.section_two{
+    display: inline-flex; /* content and image appear side by side */
+}
