@@ -39,3 +39,47 @@ li a{
     background-color: white;
     box-shadow: 5px 10px #59151d;
 }
+.slider{
+    position: relative;
+    overflow: hidden;
+    width: 800px;
+    height: 500px;
+    margin: 10px;
+}
+.slide{
+    z-index: 1;
+    position: absolute;
+    
+}
+.slide figure{
+    z-index: 1;
+    border-radius: 5px;
+}
+.navigate{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.navigate .btn{
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    background:rgb(89, 21, 29) ;
+}
+@media (max-width:800px){
+    .slider{
+        width: 600px;
+        height: 375px;
+    }
+    .navigate{
+        bottom: 25px;
+    }
+    .navigate .btn{
+        width: 10px;
+        height: 10px;
+        margin: 8px;
+    }
+}
