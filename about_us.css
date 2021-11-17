@@ -6,6 +6,7 @@
 .about_us{
     text-align: center; /* written content aligned center as in figma design */
     padding: 3%; /* add padding around about us content */
+    line-height: 150%;
 }
 
 .section_two{
@@ -16,9 +17,11 @@
 .what_we_do{
     text-align: center; /* written content aligned center as in figma design */
     padding: 3%; /* add padding around what we do content */
+    line-height: 150%;
 }
 
 .choose_us{
     text-align: center; /* written content aligned center as in figma design */
     padding-top: 10%; /* add padding space between choose us written content and the image above it */
+    line-height: 150%;
 }
