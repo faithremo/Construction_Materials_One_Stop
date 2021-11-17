@@ -68,3 +68,25 @@ transition: all 250ms ease-in-out;
     background: white;
     color: #59151d;
 }
+.text-info{
+    font-size: 1rem;
+    padding: .7rem 0;
+}
+.socials{
+    display: flex;
+    justify-items: center;
+}
+.icons{
+    height: 46px;
+    width: 46px;
+    margin: 0 0.45rem;
+    border: 1px solid #59151d;
+    display: flex;
+    justify-items: center;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    color: #59151d;
+    border-radius: 50%;
+}
