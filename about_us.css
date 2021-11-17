@@ -15,6 +15,7 @@
 
 .what_we_do{
     text-align: center; /* written content aligned center as in figma design */
+    padding: 3%; /* add padding around what we do content */
 }
 
 .choose_us{
