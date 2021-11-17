@@ -1,30 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 .section_one{
-    display: inline-flex; /* content and image appear side by side */
-    padding-bottom: 5%; /*add padding space between section one and two*/
-    padding-left: 3%;
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    padding: 50px 3%;
 }
 
 .about_us{
-    text-align: center; /* written content aligned center as in figma design */
-    padding: 2%; /* add padding around about us content */
-    line-height: 150%;
+    text-align: center; 
+    padding: 2%;
+    line-height: 200%;
+    width: 40%;
+    height: auto;
 }
 
 .section_two{
-    display: inline-flex; /* content and image appear side by side */
-    padding-bottom: 5%; /* add padding space between section two and three */
-    padding-left: 3%;
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    padding: 50px 3%;
 }
 
 .what_we_do{
-    text-align: center; /* written content aligned center as in figma design */
-    padding: 3%; /* add padding around what we do content */
-    line-height: 150%;
+    text-align: center; 
+    padding: 2%;
+    line-height: 200%;
+    width: 40%;
+    height: auto;
 }
 
 .choose_us{
-    text-align: center; /* written content aligned center as in figma design */
-    line-height: 150%;
+    text-align: center; 
+    padding: 2%;
+    line-height: 200%;
+    width: 100%;
+    height: auto;
 }
 
 .image_display{
@@ -32,14 +49,22 @@
     margin: auto;
     padding-top: 2%;
     padding-bottom: 2%;
+    width:70%;
+}
+
+.testimonials{
+    justify-content: center;
+    text-align: center;
+    padding: auto;
+    color: #ff9800;
 }
 
 * {
     box-sizing: border-box;
 }
 
-.heading {
-    font-size: 25px;
+.customer_reviews {
+    font-size: 18px;
     margin-right: 25px;
 }
 
@@ -80,16 +105,11 @@
     color: white;
 }
 
-.bar-5 {width: 60%; height: 18px; background-color: #ff9800;}
-.bar-4 {width: 30%; height: 18px;}
-.bar-3 {width: 10%; height: 18px;}
+.bar-5 {width: 96%; height: 18px; background-color: #ff9800;}
+.bar-4 {width: 0%; height: 18px;}
+.bar-3 {width: 0%; height: 18px;}
 .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
-.bar-1 {width: 15%; height: 18px;}
-
-@media (max-width: 400px) {
-    .side, .middle {
-        width: 100%;}
-}
+.bar-1 {width: 0%; height: 18px;}
 
 .speech{
     position: relative;
@@ -100,5 +120,4 @@
     background-color: #fff;
     border: solid #ff9800;
     border-radius: 10px;
-    display: inline-flexbox;
 }
