@@ -5,6 +5,7 @@
 
 .about_us{
     text-align: center; /* written content aligned center as in figma design */
+    padding: 3%; /* add padding around about us content */
 }
 
 .section_two{
