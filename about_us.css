@@ -1,5 +1,6 @@
 .section_one{
     display: inline-flex; /* content and image appear side by side */
+    padding-bottom: 10%; /*add padding space between section one and two*/
 }
 
 .about_us{
