@@ -90,3 +90,15 @@
     .side, .middle {
         width: 100%;}
 }
+
+.speech{
+    position: relative;
+    width: 600px;
+    height: 200px;
+    text-align: center;
+    line-height: 150%;
+    background-color: #fff;
+    border: solid #ff9800;
+    border-radius: 10px;
+    display: inline-flexbox;
+}
