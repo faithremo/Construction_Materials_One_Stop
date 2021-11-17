@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main.js">
+    <script src="https://use.fontawesome.com/f3b9f76703.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/'-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products Page</title>
 </head>
+
 <body>
     <div class="hero">
         <div class="logs">
@@ -19,18 +23,60 @@
         <div class="logo">
             <img src="images/logo.png" alt="logo" height="100px">
         </div>
-        <div class="search">
-            
-        </div>
-       
-        
-       
-        
-       
     </div>
-    <div class="nav-bar"></div>
-    <div class="order-by"></div>
-    <div class="products"></div>
+    <div class="nav-bar">
+        <ul>
+            <li>Home</li>
+            <li>Products</li>
+            <li>Sell On</li>
+            <li>About Us</li>
+            <li>Contacts</li>
+        </ul>
+    </div>
+    <div class="dropdown">
+        <div class='title pointerCursor'>Order By: <i class="fa fa-angle-right"></i></div>
+
+        <div class='menu pointerCursor hide'>
+            <div class='option' id='option1'>Popular</div>
+            <div class='option' id='option2'>Lowest Price</div>
+            <div class='option' id='option3'>Highest Price</div>
+            <div class='option' id='option4'>Best Rating</div>
+        </div>
+
+    </div>
+    <div class="products">
+        <div class="column">
+            <div class="b-mat">
+                <p>Building Material</p>
+                <img src="images/building-material.png" alt="Building Material" height="300px" width="600px">
+            </div>
+            <div class="r-mat">
+                <p>Roofing Material</p>
+                <img src="images/roofing-material.jpg" alt="Roofing Material" height="300px" width="600px">
+            </div>
+        </div>
+        <div class="column">
+            <div class="p-mat">
+                <p>Plumbing Material</p>
+                <img src="images/plumbing-material.jpg" alt="Plumbing Material" height="300px" width="600px">
+            </div>
+            <div class="f-mat">
+                <p>Floors and Walls</p>
+                <img src="images/floor and wall.jpeg" alt="Floors and Walls" height="300px" width="600px">
+            </div>
+        </div>
+        <div class="column">
+            <div class="ply-mat">
+                <p>Plywood and Planks</p>
+                <img src="images/plywoodandplanks.jpg" alt="Plywood and Planks" height="300px" width="600px">
+            </div>
+            <div class="ele-mat">
+                <p>Electrical Equipment</p>
+                <img src="images/electrical-equipment.jpeg" alt="Electrical Equipment" height="300px" width="600px">
+            </div>
+        </div>
+    </div>
     <div class="footer"></div>
 </body>
+
 </html>
