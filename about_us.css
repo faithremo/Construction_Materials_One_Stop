@@ -9,3 +9,7 @@
 .section_two{
     display: inline-flex; /* content and image appear side by side */
 }
+
+.what_we_do{
+    text-align: center; /* written content aligned center as in figma design */
+}
