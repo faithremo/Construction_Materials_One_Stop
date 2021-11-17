@@ -1,3 +1,3 @@
-.about_us{
-    text-align: center;
+.section_one{
+    display: inline-flex; /* content and image appear side by side */
 }
