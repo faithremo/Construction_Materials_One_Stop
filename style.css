@@ -1,0 +1,19 @@
+.hero {
+    height: 100px;
+    background-color: rgba(89, 21, 29, 0.5);
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    float: right;
+    padding: 25px;
+}
+
+.hero>.logs>ul>li>input {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 5px 0.1px 1px rgba(0, 0, 0, 0.5);
+}
