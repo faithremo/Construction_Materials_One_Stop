@@ -82,4 +82,32 @@ li a{
         height: 10px;
         margin: 8px;
     }
+
+
+.sand{
+    background-image: url("productimg/sand.jpeg");
+    width: 350px;
+    height: 40vh;
+    border: 1px solid  #59151d;
+    border-radius: 15px;
+    box-shadow: 1px 2px 10px 5px #59151d;
 }
+.cont{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+.cont button{
+    padding: 8px 20px;
+    border-radius: 1px solid #59151d;
+    background-color: #59151d;
+    color: white;
+    transition: all 250ms ease-in-out;
+   
+
+}
+.cont button:hover {
+    background-color: white;
+    color: #59151d;
+    cursor: pointer;}
+    

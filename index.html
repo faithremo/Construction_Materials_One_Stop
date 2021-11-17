@@ -30,7 +30,7 @@
             </ul>
         </div>
         <div class="slider">
-        <div class="slides">
+        <div class="slides active">
            
             <figure>
                 <img src="images/slide1.jpeg">
@@ -43,17 +43,48 @@
             </figure>
         </div>
         <div class="navigate">
+            <div class="btn active"></div>
             <div class="btn"></div>
             <div class="btn"></div>
             <div class="btn"></div>
-            <div class="btn"></div>
-            <div class="btn"></div>
+            <div class="btn"></div> 
             <div class="btn"></div>
             <div class="btn"></div>
             <div class="btn"></div>
         </div>
     </div>
     </div>
+    <div class="product">
+        <div class="sand">
+            <div class="cont">
+            <h2>Sand</h2>
+            <h1>fine sand</h1>
+            <button>View Now</button>
+        </div>
+    </div>
+    </div>
 
+    <script type="text/javascript">
+var slide= document.querySelectorAll('.slides');
+var btn=document.querySelectorAll('.btn');
+let currentSlide=1;
+// manual navigation 
+var navManual=function(manual){
+   /*slides.forEach((slide) => {
+        sides.classList.remove('active')
+        btn.forEach((btn) =>{
+            btn.classList.remove('active')
+        });
+    });*/
+  
+    slide[manual].classList.add('active');
+    btn[manual].classList.add('active');
+} 
+btn.forEach((btn,i) => {
+    btn.addEventListner("click", ()=> {
+        currentSlide=i;
+    });
+});
+    </script>
 </body>
 </html>
