@@ -101,6 +101,15 @@ ul a {
 
 .dropdown h2 {
     color: #59151d;
+    font-size: 2rem;
+}
+
+.dropdown ul {
+    list-style: none;
+}
+
+.dropdown li a {
+    line-height: 30px;
 }
 
 .product {
