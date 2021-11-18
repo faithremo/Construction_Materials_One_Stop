@@ -13,12 +13,12 @@ ul a {
     text-decoration: none;
 }
 
-ul {
+.logins ul {
     list-style: none;
     display: flex;
 }
 
-ul li {
+.logins ul li {
     padding: 12px;
     border: 1px solid white;
     margin: 20px;
@@ -27,13 +27,18 @@ ul li {
     box-shadow: 5px 10px #59151d;
 }
 
-li a {
+.logins li a {
     color: #59151d;
 }
 
 .nav {
     display: flex;
     justify-content: space-around;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
 }
 
 .nav ul li {
@@ -45,12 +50,36 @@ li a {
     box-shadow: 5px 10px #59151d;
 }
 
+.front {
+    display: flex;
+    justify-content: space-around;
+}
+
 .slider {
     position: relative;
     overflow: hidden;
     width: 800px;
     height: 500px;
     margin: 10px;
+}
+
+.slider h1 {
+    color: white;
+}
+
+.slider button {
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    background-color: #59151d;
+    color: aliceblue;
+}
+
+.slider div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .slide {
@@ -68,6 +97,10 @@ li a {
         width: 600px;
         height: 375px;
     }
+}
+
+.dropdown h2 {
+    color: #59151d;
 }
 
 .product {
