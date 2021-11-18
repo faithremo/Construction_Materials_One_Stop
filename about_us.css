@@ -144,3 +144,7 @@
     #rating_2{
         display: flex;
     }
+
+    #jamila, #lucas{
+        width: 50%;
+    }
