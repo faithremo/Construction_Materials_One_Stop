@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(89, 21, 29);
+    background: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
+    height: 8vh;
 }
 
 .logins {
@@ -20,20 +21,15 @@ ul a {
 
 .logins ul li {
     padding: 12px;
-    border: 1px solid white;
+    border: 1px solid rgb(124, 124, 124);
     margin: 20px;
     border-radius: 30px;
     background-color: white;
-    box-shadow: 5px 10px #59151d;
-}
-
-.logins li a {
-    color: #59151d;
 }
 
 .nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .nav ul {
@@ -43,11 +39,17 @@ ul a {
 
 .nav ul li {
     padding: 12px;
-    border: 1px solid #59151d;
-    margin: 30px;
+    border: 1px solid #6c6fed;
+    margin: 8px;
     border-radius: 30px;
     background-color: white;
-    box-shadow: 5px 10px #59151d;
+    transition: all ease-in-out;
+}
+
+.nav ul li:hover {
+    background-color: #6c6fed;
+    color: white;
+    cursor: pointer;
 }
 
 .front {
@@ -71,7 +73,7 @@ ul a {
     padding: 15px;
     border-radius: 30px;
     border: none;
-    background-color: #59151d;
+    background-color: #6c6fed;
     color: aliceblue;
 }
 
@@ -99,8 +101,17 @@ ul a {
     }
 }
 
+.dropdown {
+    border: 1px solid #CB65C5;
+    padding: 30px;
+    border-radius: 15px;
+    height: 50vh;
+    box-shadow: 1px 2px 8px 4px #6c6fed;
+}
+
 .dropdown h2 {
-    color: #59151d;
+    margin-top: 40px;
+    color: #6c6fed;
     font-size: 2rem;
 }
 
@@ -109,7 +120,8 @@ ul a {
 }
 
 .dropdown li a {
-    line-height: 30px;
+    color: #4DB69F;
+    line-height: 40px;
 }
 
 .product {
