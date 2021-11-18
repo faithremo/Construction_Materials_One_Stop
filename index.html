@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <link rel="stylesheet" href="home.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="main">
         <div class="navbar">
-            <img src="images/logo-removebg-preview (1).png"width="120">
+            <img src="images/logo-removebg-preview (1).png" width="120">
             <input type="text" placeholder="search">
             <div class="logins">
                 <ul>
@@ -30,61 +32,80 @@
             </ul>
         </div>
         <div class="slider">
-        <div class="slides active">
-           
-            <figure>
-                <img src="images/slide1.jpeg">
-                <img src="images/slide2.jpeg">
-                <img src="images/slide3.jpeg">
-                <img src="images/slide4.jpeg">
-                <img src="images/slide5.jpg">
-                <img src="images/slide6.jpeg">                <img src="images/slide7.jpeg"width="700">
-                <img src="images/slide8.jpeg">
-            </figure>
+            <div class="slides active">
+
+                <figure>
+                    <img src="images/slide6.jpeg">
+                    <img src="images/slide2.jpeg">
+                    <img src="images/slide3.jpeg">
+                    <img src="images/slide4.jpeg">
+                    <img src="images/slide5.jpg">
+                    <img src="images/slide6.jpeg"> <img src="images/slide7.jpeg" width="700">
+                    <img src="images/slide8.jpeg">
+                </figure>
+            </div>
+            <div class="navigate">
+                <div class="btn active"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+            </div>
         </div>
-        <div class="navigate">
-            <div class="btn active"></div>
-            <div class="btn"></div>
-            <div class="btn"></div>
-            <div class="btn"></div>
-            <div class="btn"></div> 
-            <div class="btn"></div>
-            <div class="btn"></div>
-            <div class="btn"></div>
-        </div>
-    </div>
     </div>
     <div class="product">
         <div class="sand">
             <div class="cont">
-            <h2>Sand</h2>
-            <h1>fine sand</h1>
-            <button>View Now</button>
+                <h2>SAND</h2>
+                <h1>Fine Sand</h1>
+                <button>View Now</button>
+            </div>
+        </div>
+        <div class="CEMENT">
+            <div class="cont">
+                <h2>CEMENT</h2>
+                <h1>43 Grade cement</h1>
+                <button>View Now</button>
+            </div>
+        </div>
+        <div class="BRICKS">
+            <div class="cont">
+                <h2>BRICKS</h2>
+                <h1>Clay Hallow Bricks</h1>
+                <button>View Now</button>
+            </div>
         </div>
     </div>
+    <div class="product">
+        <div class="CONCRETE">
+            <div class="cont">
+                <h2>CONCRETE</h2>
+                <h1>Hallow concrete blocks</h1>
+                <button>View Now</button>
+            </div>
+        </div>
+        <div class="TMT">
+            <div class="cont">
+                <h2>Steel Bars</h2>
+                <h1>TMT</h1>
+                <button>View Now</button>
+            </div>
+        </div>
+        <div class="ELECTRONICS">
+            <div class="cont">
+                <h2>ELECTRONICS</h2>
+                <h1>Power Cables</h1>
+                <button>View Now</button>
+            </div>
+        </div>
     </div>
+    <div class="footer">
+        <h2>Site Map</h2>
 
-    <script type="text/javascript">
-var slide= document.querySelectorAll('.slides');
-var btn=document.querySelectorAll('.btn');
-let currentSlide=1;
-// manual navigation 
-var navManual=function(manual){
-   /*slides.forEach((slide) => {
-        sides.classList.remove('active')
-        btn.forEach((btn) =>{
-            btn.classList.remove('active')
-        });
-    });*/
-  
-    slide[manual].classList.add('active');
-    btn[manual].classList.add('active');
-} 
-btn.forEach((btn,i) => {
-    btn.addEventListner("click", ()=> {
-        currentSlide=i;
-    });
-});
-    </script>
+    </div>
 </body>
+
 </html>

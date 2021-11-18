@@ -1,7 +1,6 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-
     align-items: center;
     background-color: rgb(89, 21, 29);
 }
@@ -17,7 +16,6 @@ ul a {
 ul {
     list-style: none;
     display: flex;
-
 }
 
 ul li {
@@ -58,7 +56,6 @@ li a {
 .slide {
     z-index: 1;
     position: absolute;
-
 }
 
 .slide figure {
@@ -87,50 +84,105 @@ li a {
         width: 600px;
         height: 375px;
     }
-
     .navigate {
         bottom: 25px;
     }
-
     .navigate .btn {
         width: 10px;
         height: 10px;
         margin: 8px;
     }
-    .sand{
-        background-image: url("productimg/sand.jpeg");
-        height: 40vh;
-        width: 350px;
-    }
+}
 
-/*
-    .sand{
-        background-image: url("productimg/sand.jpeg");
-        width: 350px;
-        height: 40vh;
-        border: 1px solid #59151d;
-        border-radius: 15px;
-        box-shadow: 1px 2px 10px 5px #59151d;
-    }
+.product {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
 
-    .cont {
-        color: white;
-        text-align: center;
-        padding-top: 50px;
-    }
+.sand {
+    background-image: url("productimg/sand.jpeg");
+    width: 380px;
+    height: 40vh;
+    border: 1px solid #59151d;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 1px 2px 10px 5px #59151d;
+    outline: none;
+}
 
-    .cont button {
-        padding: 8px 20px;
-        border-radius: 1px solid #59151d;
-        background-color: #59151d;
-        color: white;
-        transition: all 250ms ease-in-out;
+.cont {
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
 
+.cont button {
+    padding: 8px 20px;
+    border: none;
+    background-color: #59151d;
+    color: white;
+    outline: none;
+    transition: all 250ms ease-in-out;
+}
 
-    }
+.cont button:hover {
+    background-color: white;
+    color: #59151d;
+    cursor: pointer;
+}
 
-    .cont button:hover {
-        background-color: white;
-        color: #59151d;
-        cursor: pointer;
-    }*/
+.TMT {
+    background-image: url(productimg/TMT\ Steel\ Bars.jpeg);
+    width: 380px;
+    height: 40vh;
+    border: 1px solid #59151d;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 1px 2px 10px 5px #59151d;
+    outline: none;
+}
+
+.ELECTRONICS {
+    background-image: url(productimg/Power\ Cables.jpeg);
+    width: 380px;
+    height: 40vh;
+    border: 1px solid #59151d;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 1px 2px 10px 5px #59151d;
+    outline: none;
+}
+
+.CONCRETE {
+    background-image: url(productimg/hollow\ concrete\ blocks.jpg);
+    width: 380px;
+    height: 40vh;
+    border: 1px solid #59151d;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 1px 2px 10px 5px #59151d;
+    outline: none;
+}
+
+.BRICKS {
+    background-image: url(productimg/Clay\ Hollow\ Bricks.jpeg);
+    width: 380px;
+    height: 40vh;
+    border: 1px solid #59151d;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 1px 2px 10px 5px #59151d;
+    outline: none;
+}
+
+.CEMENT {
+    background-image: url(productimg/43\ Grade\ Cement.jpg);
+    width: 380px;
+    height: 40vh;
+    border: 1px solid #59151d;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 1px 2px 10px 5px #59151d;
+    outline: none;
+}
