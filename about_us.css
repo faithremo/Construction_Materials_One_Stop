@@ -52,11 +52,15 @@
     width:70%;
 }
 
-.testimonials{
+.testimonials_heading{
     justify-content: center;
     text-align: center;
     padding: auto;
     color: #ff9800;
+}
+
+.all_testimonials{
+    display: flexbox;
 }
 
 * {
@@ -113,11 +117,30 @@
 
 .speech{
     position: relative;
-    width: 600px;
+    width: 400px;
     height: 200px;
     text-align: center;
     line-height: 150%;
     background-color: #fff;
     border: solid #ff9800;
     border-radius: 10px;
-}
+    }
+
+    #ratings{
+        display: flex;
+        width: 100%;
+        margin-top:30px;
+    }
+
+    #rating_1, .customer_rating{
+        width: 50%;
+    }
+
+    .customer_rating{
+        padding-left:50px;
+        padding-right:30px;
+    }
+
+    #rating_2{
+        display: flex;
+    }
