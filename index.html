@@ -1,112 +1,1160 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="main.js">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.js" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <script src="https://use.fontawesome.com/f3b9f76703.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/'-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/'-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products Page</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="hero">
-        <div class="logs">
-            <ul>
-                <li><input type="text" placeholder="Search..."></li>
-                <li>Login</li>
-                <li>Register</li>
-                <li>Seller Login</li>
-            </ul>
-        </div>
-        <div class="logo">
-            <img src="images/logo.png" alt="logo" height="100px">
-        </div>
+      <div class="logs">
+        <ul>
+          <li><input type="text" placeholder="Search..." /></li>
+          <li>Login</li>
+          <li>Register</li>
+          <li>Seller Login</li>
+        </ul>
+      </div>
+      <div class="logo">
+        <img src="images/logo.png" alt="logo" height="100px" />
+      </div>
     </div>
     <div class="nav-bar">
-        <ul>
-            <li>Home</li>
-            <li>Products</li>
-            <li>Sell On</li>
-            <li>About Us</li>
-            <li>Contacts</li>
-        </ul>
+      <ul>
+        <li>Home</li>
+        <li><a href="#Products">Products</a></li>
+        <li>Sell On</li>
+        <li>About Us</li>
+        <li>Contacts</li>
+      </ul>
     </div>
     <div class="dropdown">
-        <div class='title pointerCursor'>Order By: <i class="fa fa-angle-right"></i></div>
+      <div class="title pointerCursor">
+        Order By: <i class="fa fa-angle-right"></i>
+      </div>
 
-        <div class='menu pointerCursor hide'>
-            <div class='option' id='option1'>Popular</div>
-            <div class='option' id='option2'>Lowest Price</div>
-            <div class='option' id='option3'>Highest Price</div>
-            <div class='option' id='option4'>Best Rating</div>
-        </div>
-
+      <div class="menu pointerCursor hide">
+        <div class="option" id="option1">Popular</div>
+        <div class="option" id="option2">Lowest Price</div>
+        <div class="option" id="option3">Highest Price</div>
+        <div class="option" id="option4">Best Rating</div>
+      </div>
     </div>
-    <div class="products">
-        <div class="column">
-            <div class="image">
-                <img class="image__img" src="images/building-material.png" alt="Building Material" height="350px">
-                <div class="image__overlay image__overlay--primary">
-                    <div class="image__title">Building Material</div>
-                    <p class="image__description">
-                        Click to view more.
-                    </p>
-                </div>
-            </div>
-            <div class="image">
-                <img class="image__img-r" src="images/roofing-material.jpg" alt="Building Material" height="350px">
-                <div id="img-1" class="image__overlay image__overlay--primary">
-                    <div class="image__title">Roofing Material</div>
-                    <p class="image__description">
-                        Click to view more.
-                    </p>
-                </div>
-            </div>
+    <div id="Products" class="products">
+      <div class="column">
+        <div class="image">
+          <img
+            class="image__img"
+            src="images/building-material.png"
+            alt="Building Material"
+            height="350px"
+          />
+          <div class="image__overlay image__overlay--primary">
+            <div class="image__title">Building Material</div>
+            <p class="image__description"><a href="#building">Click to view more.</a></p>
+          </div>
         </div>
-        <div class="column">
-            <div class="image">
-                <img class="image__img" src="images/plumbing-material.jpg" alt="Building Material" height="350px">
-                <div class="image__overlay image__overlay--primary">
-                    <div class="image__title">Plumbing Material</div>
-                    <p class="image__description">
-                        Click to view more.
-                    </p>
-                </div>
-            </div>
-            <div class="image">
-                <img class="image__img-r" src="images/floor and wall.jpeg" alt="Building Material" height="350px">
-                <div id="img-r" class="image__overlay image__overlay--primary">
-                    <div class="image__title">Floor and Wall</div>
-                    <p class="image__description">
-                        Click to view more.
-                    </p>
-                </div>
-            </div>
+        <div class="image">
+              <img
+            class="image__img-r"
+            src="images/roofing-material.jpg"
+            alt="Building Material"
+            height="350px"
+            />
+          <div id="img-1" class="image__overlay image__overlay--primary">
+            <div class="image__title">Roofing Material</div>
+            <p class="image__description"><a href="#roof">Click to view more.</a></p>
+          </div>
         </div>
-        <div class="column">
-            <div class="image">
-                <img class="image__img" src="images/plywoodandplanks.jpg" alt="Building Material" height="350px">
-                <div class="image__overlay image__overlay--primary">
-                    <div class="image__title">Plywood and Planks</div>
-                    <p class="image__description">
-                        Click to view more.
-                    </p>
-                </div>
-            </div>
-            <div class="image">
-                <img class="image__img-r" src="images/electrical-equipment.jpeg" alt="Building Material" height="350px">
-                <div id="img-r" class="image__overlay image__overlay--primary">
-                    <div class="image__title">Electrical Equipment</div>
-                    <p class="image__description">
-                        Click to view more.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="column">
+        <div class="image">
+          <img
+            class="image__img"
+            src="images/plumbing-material.jpg"
+            alt="Building Material"
+            height="350px"
+          />
+          <div class="image__overlay image__overlay--primary">
+            <div class="image__title">Plumbing Material</div>
+            <p class="image__description"><a href="#plumbing">Click to view more.</a></p>
+          </div>
         </div>
+        <div class="image">
+          <img
+            class="image__img-r"
+            src="images/floor and wall.jpeg"
+            alt="Building Material"
+            height="350px"
+          />
+          <div id="img-r" class="image__overlay image__overlay--primary">
+            <div class="image__title">Floor and Wall</div>
+            <p class="image__description"><a href="#floor">Click to view more.</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="image">
+          <img
+            class="image__img"
+            src="images/plywoodandplanks.jpg"
+            alt="Building Material"
+            height="350px"
+          />
+          <div class="image__overlay image__overlay--primary">
+            <div class="image__title">Plywood and Planks</div>
+            <p class="image__description"><a href="#plywood">Click to view more.</a></p>
+          </div>
+        </div>
+        <div class="image">
+          <img
+            class="image__img-r"
+            src="images/electrical-equipment.jpeg"
+            alt="Building Material"
+            height="350px"
+          />
+          <div id="img-r" class="image__overlay image__overlay--primary">
+            <div class="image__title">Electrical Equipment</div>
+            <p class="image__description"><a href="#electrical">Click to view more.</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image-container">
+      <div class="box-container">
+        <div id="building" class="box">
+          <div class="image">
+            <img src="images/const/43 grade cement.jpg" alt="43 grade cement" height="200px"/>
+          </div>
+          <div class="info">
+            <h3>43 grade cement</h3>
+            <div class="subInfo">
+              <strong class="price">Kshs. 600/ Bag</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/const/53 grade cement.png" alt="53 grade cement" height="200px/>
+          </div>
+          <div class="info">
+            <h3>53 grade cement</h3>
+            <div class="subInfo">
+              <strong class="price">Kshs. 700/ Bag</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="images/const/Concrete Cement.jpg"
+              alt="Concrete Cement"
+              height="200px"
+              width="300px"
+            />
+          </div>
+          <div class="info">
+            <h3>Concrete Cement</h3>
+            <div class="subInfo">
+              <strong class="price">Kshs. 800/ Bag</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="images/const/Ready Mix Concrete.jpg"
+              alt="Ready Mix Concrete"
+              height="200px"
+            />
+          </div>
+          <div class="info">
+            <h3>Ready Mix Concrete</h3>
+            <div class="subInfo">
+              <strong class="price">Kshs. 900/ Bag</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="images/const/fine aggregates.jpg"
+              alt="Fine Aggregates"
+              height="200px"
+            />
+          </div>
+          <div class="info">
+            <h3>Fine Aggregates</h3>
+            <div class="subInfo">
+              <strong class="price">Kshs. 2,000/ Ton (1000 Kgs)</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="images/const/plastering sand.jpeg"
+              alt="Plastering Sand"
+              height="200px"
+            />
+          </div>
+          <div class="info">
+            <h3>Plastering Sand</h3>
+            <div class="subInfo">
+              <strong class="price">Kshs. 3,000/ Ton (1000 Kgs)</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="images/const/river sand.jpeg"
+              alt="River Sand"
+              height="200px"
+            />
+          </div>
+          <div class="info">
+            <h3>River Sand</h3>
+            <div class="subInfo">
+              <strong class="price">Kshs. 5,000/ Ton (1000 Kgs)</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="images/const/quarry dust.jpeg"
+              alt="Quarry Dust"
+              height="200px"
+            />
+          </div>
+          <div class="info">
+            <h3>Quarry Dust</h3>
+            <div class="subInfo">
+              <strong class="price">Kshs. 6,000/ Ton (1000 Kgs)</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="images/const/coarse aggregates.jpeg"
+              alt="Coarse Aggregates"
+              height="200px"
+            />
+          </div>
+          <div class="info">
+            <h3>Coarse Aggregates</h3>
+            <div class="subInfo">
+              <strong class="price">Kshs. 900/ Ton (1000 Kgs)</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="images/const/concrete solid blocks.jpeg"
+              alt="Concrete Solid Blocks"
+              height="200px"
+            />
+          </div>
+          <div class="info">
+            <h3>Concrete Solid Blocks</h3>
+            <div class="subInfo">
+              <strong class="price">Kshs. 3,620/ Square mm</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="images/const/Concrete Cover Blocks.jpeg"
+              alt="Concrete Cover Blocks"
+              height="200px"
+            />
+          </div>
+          <div class="info">
+            <h3>Concrete Cover Blocks</h3>
+            <div class="subInfo">
+              <strong class="price">Kshs. 3,700/ Square mm</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="images/const/Clay Bricks & Terracotta.jpeg"
+              alt="Clay Bricks & Terracotta"
+              height="200px"
+            />
+          </div>
+          <div class="info">
+            <h3>Clay Bricks & Terracotta</h3>
+            <div class="subInfo">
+              <strong class="price">Kshs. 30/ Brick</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="images/const/Fly Ash Bricks.jpg"
+              alt="Fly Ash Bricks"
+              height="200px"
+            />
+          </div>
+          <div class="info">
+            <h3>Fly Ash Bricks</h3>
+            <div class="subInfo">
+              <strong class="price">Kshs. 25/ Brick</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="images/const/Clay Hollow Bricks.jpeg"
+              alt="Clay Hollow Bricks"
+              height="200px"
+            />
+          </div>
+          <div class="info">
+            <h3>Clay Hollow Bricks</h3>
+            <div class="subInfo">
+              <strong class="price">Kshs. 25/ Brick</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="images/const/Clay Wire Cut Bridge.jpeg"
+              alt="Clay Wire Cut Bricks"
+              height="200px"
+            />
+          </div>
+          <div class="info">
+            <h3>Clay Wire Cut Bricks</h3>
+            <div class="subInfo">
+              <strong class="price">Kshs. 30/ Brick</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="images/const/Clay Table Mould Bricks.jpeg"
+              alt="Clay Table Mould Bricks"
+              height="200px"
+            />
+          </div>
+          <div class="info">
+            <h3>Clay Table Mould Bricks</h3>
+            <div class="subInfo">
+              <strong class="price">Kshs. 30/ Brick</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="images/const/TMT Steel Bars.png"
+              alt="TMT bars"
+              height="200px"
+            />
+          </div>
+          <div class="info">
+            <h3>TMT Steel Bars</h3>
+            <div class="subInfo">
+              <strong class="price">Kshs. 700/ Bar</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="images/const/TMT Binding Wires.jpeg"
+              alt="TMT Binding Wires"
+              height="200px"
+            />
+          </div>
+          <div class="info">
+            <h3>TMT Binding Wires</h3>
+            <div class="subInfo">
+              <strong class="price">Kshs. 870/ Kg</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img
+              src="images/const/TMT rings.jpeg"
+              alt="TMT rings"
+              height="200px"
+            />
+          </div>
+          <div class="info">
+            <h3>TMT Rings</h3>
+            <div class="subInfo">
+              <strong class="price">Kshs. 830/ Kg</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+        </div>
+
+      </div>
+      <div class="box-container">
+        <div id="roof" class="box">
+            <div class="image">
+              <img
+                src="images/const/Solar Tiles.jpg"
+                alt="Solar Tiles"
+                height="200px"
+              />
+            </div>
+            <div class="info">
+              <h3>Solar Tiles</h3>
+              <div class="subInfo">
+                <strong class="price">Kshs. 42,399.50/ Pair Pack</strong>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="images/const/Asphalt Shingles.jpeg"
+                alt="Asphalt Shingles"
+                height="200px"
+              />
+            </div>
+            <div class="info">
+              <h3>Asphalt Shingles</h3>
+              <div class="subInfo">
+                <strong class="price">Kshs. 42,399.50/ Pair Pack</strong>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="images/const/Metal Roofing.jpeg"
+                alt="Metal Roofing"
+                height="200px"
+              />
+            </div>
+            <div class="info">
+              <h3>Metal Roofing</h3>
+              <div class="subInfo">
+                <strong class="price">Kshs. 1,000/ Meter</strong>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="images/const/Stone-Coated Steel.jpg"
+                alt="Stone-Coated Steel"
+                height="200px"
+              />
+            </div>
+            <div class="info">
+              <h3>Stone-Coated Steel</h3>
+              <div class="subInfo">
+                <strong class="price">Kshs. 799</strong>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="images/const/Wood Shingles.jpg"
+                alt="Wood Shingles"
+                height="200px"
+              />
+            </div>
+            <div class="info">
+              <h3>Wood Shingles</h3>
+              <div class="subInfo">
+                <strong class="price">Kshs. 650 Each</strong>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="images/const/Clay Tiles.jpeg"
+                alt="Clay Tiles"
+                height="200px"
+              />
+            </div>
+            <div class="info">
+              <h3>Clay Tiles</h3>
+              <div class="subInfo">
+                <strong class="price">Kshs. 1,900</strong>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div>
+          </div>
+      </div>
+      <div class="box-container">
+        <div id="plumbing" class="box">
+            <div class="image">
+              <img
+                src="images/const/CPVC Pipes & Fittings.jpg"
+                alt="CPVC Pipes & Fittings"
+                height="200px"
+              />
+            </div>
+            <div class="info">
+              <h3>CPVC Pipes & Fittings</h3>
+              <div class="subInfo">
+                <strong class="price">Kshs. 550/ 20mm</strong>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="images/const/SWR PVC Pipes & Fittings.jpeg"
+                alt="SWR PVC Pipes & Fittings"
+                height="200px"
+              />
+            </div>
+            <div class="info">
+              <h3>SWR PVC Pipes & Fittings</h3>
+              <div class="subInfo">
+                <strong class="price">Kshs. 400/ 20mm</strong>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="images/const/Rigid PVC Pipes & Fittings.jpeg"
+                alt="Rigid PVC Pipes & Fittings"
+                height="200px"
+              />
+            </div>
+            <div class="info">
+              <h3>Rigid PVC Pipes & Fittings</h3>
+              <div class="subInfo">
+                <strong class="price">Kshs. 600/ 20mm</strong>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="images/const/Blow Moulded Water Storage Tanks1.jpeg"
+                alt="Blow Moulded Water Storage Tanks"
+                height="200px"
+              />
+            </div>
+            <div class="info">
+              <h3>Blow Moulded Water Storage Tanks</h3>
+              <div class="subInfo">
+                <strong class="price">Kshs. 9,000</strong>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="images/const/Roto Moulded Water Storage Tanks.jpeg"
+                alt="Roto Moulded Water Storage Tanks"
+                height="200px"
+              />
+            </div>
+            <div class="info">
+              <h3>Roto Moulded Water Storage Tanks</h3>
+              <div class="subInfo">
+                <strong class="price">Kshs. 10,000</strong>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="images/const/Underground Water Storage Tanks.jpeg"
+                alt="Underground Water Storage Tanks"
+                height="200px"
+              />
+            </div>
+            <div class="info">
+              <h3>Underground Water Storage Tanks</h3>
+              <div class="subInfo">
+                <strong class="price">Kshs. 14,000</strong>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div>
+          </div>
+      </div>
+      <div class="box-container">
+        <div id="floor" class="box">
+            <div class="image">
+              <img
+                src="images/const/Granite.jpg"
+                alt="Granite"
+                height="200px"
+              />
+            </div>
+            <div class="info">
+              <h3>Granite Tiles</h3>
+              <div class="subInfo">
+                <strong class="price">Kshs. 1,450/ (60*60mm) per piece</strong>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="images/const/Marble floor.jpeg"
+                alt="Marble floor"
+                height="200px"
+              />
+            </div>
+            <div class="info">
+              <h3>Marble floor</h3>
+              <div class="subInfo">
+                <strong class="price">Kshs. 2,000</strong>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="images/const/Digital Vitrified Tiles.jpeg"
+                alt="Digital Vitrified Tiles"
+                height="200px"
+              />
+            </div>
+            <div class="info">
+              <h3>Digital Vitrified Tiles</h3>
+              <div class="subInfo">
+                <strong class="price">Kshs. 81 30*30mm</strong>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="images/const/Glazed Vitrified Tiles.jpg"
+                alt="Glazed Vitrified Tiles"
+                height="200px"
+              />
+            </div>
+            <div class="info">
+              <h3>Glazed Vitrified Tiles</h3>
+              <div class="subInfo">
+                <strong class="price">Kshs. 99</strong>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="images/const/singlechargevitrified.jpeg"
+                alt="singlechargevitrified"
+                height="200px"
+              />
+            </div>
+            <div class="info">
+              <h3>Single Charge Vitrified</h3>
+              <div class="subInfo">
+                <strong class="price">Kshs. 105</strong>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="images/const/Double Charge Vitrified Tiles.jpg"
+                alt="Double Charge Vitrified Tiles"
+                height="200px"
+              />
+            </div>
+            <div class="info">
+              <h3>Double Charge Vitrified Tiles</h3>
+              <div class="subInfo">
+                <strong class="price">Kshs. 100</strong>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div>
+          </div>
+      </div>
+
+
+      <div class="plumbing"></div>
+      <div class="wall"></div>
+      <div class="plank"></div>
+      <div class="electrical"></div>
     </div>
     <div class="footer"></div>
-</body>
-
+  </body>
 </html>

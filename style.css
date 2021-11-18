@@ -172,3 +172,107 @@ ul {
 .image__img-r {
     padding-left: 100px;
 }
+
+.image-container .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    width: 85%;
+    margin:0 auto;
+}
+
+.image-container .box-container .box{
+    flex:1 1 30rem;
+    border:.1rem solid rgba(0,0,0,.3);
+    overflow: hidden;
+    position: relative;
+    margin:1rem 2rem;
+}
+
+.image-container .box-container .box .image{
+    height: 20rem;
+    padding:2rem;
+    text-align: center;
+    background:#f0f0f0;
+}
+
+.image-container .box-container .box .info h3{
+    padding:1rem;
+    font-size: 2rem;
+}
+
+
+.image-container .box-container .box .info .subInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem;
+    border-top: .1rem solid rgba(0,0,0,.3);
+}
+
+
+.image-container .box-container .box .info .subInfo .price{
+    color:#ff3300;
+    font-size: 2rem;
+}
+
+.image-container .box-container .box .info .subInfo .stars i{
+    color:orange;
+    font-size: 1.5rem;
+}
+
+.image-container .box-container .box {
+    flex:1 1 30rem;
+    border:.1rem solid rgba(0,0,0,.3);
+    overflow: hidden;
+    position: relative;
+    margin:1rem 2rem;
+}
+
+.image-container .box-container .box .overlay{
+    position: absolute;
+    top:0; left: 0;
+    height:23.9rem;
+    width: 100%;
+    background:rgba(0,0,0,.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+}
+
+.image-container .box-container .box:hover .overlay {
+    transform: scale(1);
+}
+
+.image-container .box-container .box .overlay a {
+    font-size: 2rem;
+    padding:1.5rem 2rem;
+    background:#fff;
+    color:#666;
+    margin:1rem;
+    transform: translateY(-15rem);
+    transition-delay: calc(.1s * var(--i));
+}
+
+.image-container .box-container .box:hover .overlay a {
+    transform: translateY(0rem);
+}
+
+.image-container .box-container .box .overlay a:hover {
+    color:var(--blue);
+}
+
+.products a:-webkit-any-link {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.products a:-webkit-any-link:hover {
+    color: red;
+    cursor: pointer;
+    text-decoration: underline;
+}
