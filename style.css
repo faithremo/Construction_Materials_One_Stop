@@ -1,175 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'EB Garamond', serif;
-}
-.container{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-   
-}.container::before{
-    content: '';
-    position: absolute;
-    z-index: 6;
+    @import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'EB Garamond', serif;
+    }
     
-}
-
-.forms{
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-}
-.signin-signup{
+    .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
     
-    top: 50%;
-    margin-left: 800px;
-    width: 50%;
-    transform: translate(-20%, 0%);
-    display: grid;
-    grid-template-columns: 1fr;
-    z-index: 5;
+    .sign-in {
+        display: none;
+        width: 100%;
+        margin: 0 auto;
+        height: 80vh;
+        align-items: center;
+    }
     
-}
-
-form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding:0.5rem;
-    overflow: hidden;
-    grid-column: 1/2;
-    grid-row: 1/2;
-
-}
-.sign-in-form{
-    z-index: 2;
-}
-.sign-up-form{
-    z-index: 1;
-    opacity: 0;
-}
-
-h1{
-    font-size: 2rem;
-    color:#59151d;
-    margin-bottom: 10px;
-}
-.info-field{
-    max-width: 350px;
-    height: 50px;
-    width: 100%;
-    margin: 10px 0;
-    background-color: #f0f0f0;
-    display: grid;
-    grid-template-columns: 15% 85%;
-
-}
-.info-field i{
-text-align: center;
-color: #59151d;
-font-size: 1.1rem;
-}
-.info-field input{
-    outline: none;
-    background: none;
-    border: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    line-height: 1;
-    color: #333;
-}
-.btn {
-outline: none;
-border-radius: 30px;
-width: 150px;
-height: 50px;
-font-weight: 600;
-background: #59151d;
-color: white;
-border: none;
-margin: 10px 0;
-transition: all 250ms ease-in-out;
-}
-.btn:hover{
-    background: white;
-    color: #59151d;
-}
-.text-info{
-    font-size: 1rem;
-    padding: .7rem 0;
-}
-.socials{
-    display: flex;
-    justify-items: center;
-}
-.icons{
-    height: 46px;
-    width: 46px;
-    margin: 0 0.45rem;
-    border: 1px solid #59151d;
-    display: flex;
-    justify-items: center;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.1rem;
-    transition: 0.3s;
-    color: #59151d;
-    border-radius: 50%;
-}
-.panels{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
-.panel{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    flex-direction: column;
-    align-items: flex-end;
-    z-index: 7;
-}
-.left-panel{
-    pointer-events: all ;
-    padding: 3rem 17% 2rem 12%;
- 
-}
-.right-panel{
-    pointer-events: none;
-    padding: 3rem 12% 2rem 17%;
-   
-}
-.content{
-    color: rgb(19, 18, 18);
-}
-.content h3{
-    font-size:1.5rem;
-    font-weight: 600px;
-    line-height: 1;
-
-}
-.content p{
-    font-size: 16px;
-    padding: 0.7rem 0;
-}
-.btn .transparent{
-background: #59151d;
-border: 2px solid #59151d;
-margin: 0;
-width: 120px;
-height: 38px;
-font-weight: 500;
-}
-.right-panel .content, .right-panel .image{
-    transform: translateX(800px);
-}
+    .left-panel {
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0.5rem;
+        overflow: hidden;
+    }
+    
+    .sign-in-form {
+        width: 40%;
+    }
+    
+    .sign-up {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        height: 80vh;
+        align-items: center;
+    }
+    
+    .right-panel {
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    .sign-up-form {
+        width: 40%;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        color: #59151d;
+        margin-bottom: 10px;
+    }
+    
+    .info-field {
+        max-width: 350px;
+        height: 50px;
+        width: 100%;
+        margin: 10px 0;
+        background-color: #f0f0f0;
+        display: grid;
+        grid-template-columns: 15% 85%;
+    }
+    
+    .info-field i {
+        text-align: center;
+        color: #59151d;
+        font-size: 1.1rem;
+    }
+    
+    .info-field input {
+        outline: none;
+        background: none;
+        border: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        line-height: 1;
+        color: #333;
+    }
+    
+    .btn {
+        outline: none;
+        border-radius: 30px;
+        width: 150px;
+        height: 50px;
+        font-weight: 600;
+        background: #59151d;
+        color: white;
+        border: none;
+        margin: 10px 0;
+        transition: all 250ms ease-in-out;
+    }
+    
+    .btn:hover {
+        background: white;
+        color: #59151d;
+    }
+    
+    .text-info {
+        font-size: 1rem;
+        padding: .7rem 0;
+    }
+    
+    .socials {
+        display: flex;
+        justify-items: center;
+    }
+    
+    .icons {
+        height: 46px;
+        width: 46px;
+        margin: 0 0.45rem;
+        border: 1px solid #59151d;
+        display: flex;
+        justify-items: center;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.1rem;
+        transition: 0.3s;
+        color: #59151d;
+        border-radius: 50%;
+    }
+    
+    .display {
+        display: none;
+    }
