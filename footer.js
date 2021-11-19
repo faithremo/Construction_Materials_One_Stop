@@ -12,4 +12,3 @@ lightMode.addEventListener('click', () => {
   lightMode.classList.toggle('hide')
   darkMode.classList.remove('hide')
 })
-
