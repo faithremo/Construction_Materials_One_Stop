@@ -103,7 +103,7 @@ ul a {
     justify-content: center;
     text-align: center;
     padding: auto;
-    color: #ff9800;
+    color: #cb65c5;
 }
 
 .all_testimonials{
@@ -124,7 +124,7 @@ ul a {
 }
 
 .checked {
-    color: orange;
+    color: #6c6fed;
 }
 
 .side {
@@ -156,10 +156,10 @@ ul a {
     color: white;
 }
 
-.bar-5 {width: 96%; height: 18px; background-color: #ff9800;}
+.bar-5 {width: 96%; height: 18px; background-color: #6c6fed;}
 .bar-4 {width: 0%; height: 18px;}
 .bar-3 {width: 0%; height: 18px;}
-.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-2 {width: 4%; height: 18px; background-color: #6c6fed;}
 .bar-1 {width: 0%; height: 18px;}
 
 .speech{
@@ -169,7 +169,7 @@ ul a {
     text-align: center;
     line-height: 150%;
     background-color: #fff;
-    border: solid #ff9800;
+    border: solid #cb65c5;
     border-radius: 10px;
     }
 
@@ -217,4 +217,12 @@ ul a {
 
     #name{
         text-align: right;
+    }
+
+    .purple{
+        color: #cb65c5;
+    }
+
+    .blue{
+        color: #6c6fed;
     }
