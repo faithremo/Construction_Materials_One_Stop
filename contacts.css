@@ -1,32 +1,24 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
   }
-  
-  * {
-    box-sizing: border-box;
-  }
 
-.navbar {
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
-    height: 8vh;
+    background: linear-gradient(-20deg, #D558C8 0%, #24D292 100%);
+    height: 100px;
 }
-
 .logins {
     display: flex;
 }
-
 ul a {
     text-decoration: none;
 }
-
 .logins ul {
     list-style: none;
     display: flex;
 }
-
 .logins ul li {
     padding: 12px;
     border: 1px solid rgb(124, 124, 124);
@@ -34,35 +26,31 @@ ul a {
     border-radius: 30px;
     background-color: white;
 }
-
 .nav {
     display: flex;
     justify-content: space-between;
 }
-
 .nav ul {
     list-style: none;
     display: flex;
 }
-
 .nav ul li {
     padding: 12px;
-    border: 1px solid #6c6fed;
+    border: 1px solid #6C6FED;
     margin: 8px;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: white;
     transition: all ease-in-out;
 }
-
 .nav ul li:hover {
-    background-color: #6c6fed;
+    background-color: #6C6FED;
     color: white;
     cursor: pointer;
 }
-
   h1{
       padding-top: 20px;
       padding-bottom: 20px;
+      color: #CB65C5;
   }
 
   p{
@@ -71,6 +59,7 @@ ul a {
 
   .form_page{
       text-align: center;
+      
   }
   .fb{
     font-size: 28px;
@@ -93,7 +82,7 @@ ul a {
   
   /*Style submit button*/
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #6c6fed ;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -102,7 +91,7 @@ ul a {
   }
   
   input[type=submit]:hover {
-    background-color: rgb(98, 129, 128);
+    background-color: #CB65C5;;
   }
   
   /* Style the container/contact section */
@@ -110,26 +99,37 @@ ul a {
     border-radius: 5px;
     background-color: #ffffff;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
   }
   
   /* Create two columns that float next to eachother */
   .column {
-    float: left;
-    width: 50%;
-    margin-top: 6px;
-    padding: 20px;
+    padding: 80px;
+    border: 1px solid #6c6fed;;
+    border-radius: 20px;
+    width: 40%;
+  color: #CB65C5;
   }
   
-  /* Clear floats after the columns */
+  /* Clear floats after the columns 
   .row:after {
     content: "";
     display: table;
     clear: both;
+  }*/
+  .contacts{
+    width: 40%;
+    margin-top: 80px;
   }
-
-  h2{
-      padding-bottom: 15px;
-    }
+  .contacts h2{
+    color: #CB65C5;
+    font-size: 25px;
+  }
+  span{
+    font-size: 22px;
+    background: linear-gradient(-20deg, #D558C8 0%, #24D292 100%);
+  }
   
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
