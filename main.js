@@ -13,3 +13,18 @@ function carousel() {
     x[myIndex - 1].style.display = "block";
     setTimeout(carousel, 3000);
 }
+//footer starts here//
+const darkMode = document.getElementById('dark-mode')
+const lightMode = document.getElementById('light-mode')
+
+darkMode.addEventListener('click', () => {
+    document.body.classList.toggle('dark__mode')
+    darkMode.classList.toggle('hide')
+    lightMode.classList.remove('hide')
+})
+
+lightMode.addEventListener('click', () => {
+    document.body.classList.remove('dark__mode')
+    lightMode.classList.toggle('hide')
+    darkMode.classList.remove('hide')
+})
