@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+/*navbaar start here*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
+    height: 100px;
+}
+
+.logins {
+    display: flex;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+.logins ul {
+    list-style: none;
+    display: flex;
+}
+
+.logins ul li {
+    padding: 12px;
+    border: 1px solid rgb(124, 124, 124);
+    margin: 20px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    padding: 12px;
+    border: 1px solid #6c6fed;
+    margin: 30px;
+    border-radius: 10px;
+    background-color: white;
+    transition: all ease-in-out;
+}
+
+.nav ul li:hover {
+    background-color: #6c6fed;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*navbar ends here*/
+
+.front {
+    display: flex;
+    justify-content: space-around;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 800px;
+    height: 500px;
+    margin: 10px;
+}
+
+.slider h1 {
+    color: white;
+}
+
+.slider button {
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    background-color: #6c6fed;
+    color: aliceblue;
+}
+
+.slider div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide {
+    z-index: 1;
+    position: absolute;
+}
+
+.slide figure {
+    z-index: 1;
+    border-radius: 5px;
+}
+
+@media (max-width:800px) {
+    .slider {
+        width: 600px;
+        height: 375px;
+    }
+}
+
+.dropdown {
+    border: 1px solid #CB65C5;
+    padding: 30px;
+    border-radius: 15px;
+    height: 50vh;
+    box-shadow: 1px 2px 8px 4px #6c6fed;
+}
+
+.dropdown h2 {
+    margin-top: 40px;
+    color: #4DB69F;
+    font-size: 2rem;
+}
+
+.dropdown ul {
+    list-style: none;
+}
+
+.dropdown li a {
+    color: #6c6fed;
+    line-height: 40px;
+}
+
+.product {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.overlay {
+    filter: brightness(.7);
+    width: 380px;
+    height: 40vh;
+    border: none;
+    width: 45%;
+    outline: none;
+}
+
+.overlay:hover {
+    filter: brightness(1);
+}
+
+.sand {
+    background-image: url("productimg/sand.jpeg");
+}
+
+.cont {
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.cont button {
+    padding: 8px 20px;
+    border: none;
+    background-color: #cb65c5;
+    color: white;
+    outline: none;
+    transition: all 250ms ease-in-out;
+}
+
+.cont button:hover {
+    background-color: white;
+    color: #cb65c5;
+    cursor: pointer;
+}
+
+.TMT {
+    background-image: url(productimg/TMT\ Steel\ Bars.jpeg);
+}
+
+.ELECTRONICS {
+    background-image: url(productimg/Power\ Cables.jpeg);
+}
+
+.CONCRETE {
+    background-image: url(productimg/hollow\ concrete\ blocks.jpg);
+}
+
+.BRICKS {
+    background-image: url(productimg/Clay\ Hollow\ Bricks.jpeg);
+}
+
+.CEMENT {
+    background-image: url(productimg/43\ Grade\ Cement.jpg);
+}
+
+.down {
+    margin-bottom: 80px;
+}
