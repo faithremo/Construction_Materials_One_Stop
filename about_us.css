@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(-20deg, #D558C8 0%, #24D292 100%);
+    height: 100px;
+}
+.logins {
+    display: flex;
+}
+ul a {
+    text-decoration: none;
+}
+.logins ul {
+    list-style: none;
+    display: flex;
+}
+.logins ul li {
+    padding: 12px;
+    border: 1px solid rgb(124, 124, 124);
+    margin: 20px;
+    border-radius: 30px;
+    background-color: white;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+.nav ul li {
+    padding: 12px;
+    border: 1px solid #6C6FED;
+    margin: 8px;
+    border-radius: 10px;
+    background-color: white;
+    transition: all ease-in-out;
+}
+.nav ul li:hover {
+    background-color: #6C6FED;
+    color: white;
+    cursor: pointer;
+}
+
+.section_one{
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    padding: 10px 3%;
+}
+
+.about_us{
+    text-align: center; 
+    padding: 2%;
+    line-height: 200%;
+    width: 40%;
+    height: auto;
+}
+
+.section_two{
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    padding: 50px 3%;
+}
+
+.what_we_do{
+    text-align: center; 
+    padding: 2%;
+    line-height: 200%;
+    width: 40%;
+    height: auto;
+}
+
+.choose_us{
+    text-align: center; 
+    padding: 3%;
+    line-height: 200%;
+    width: 100%;
+    height: auto;
+}
+
+.image_display{
+    display: block;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width:70%;
+}
+
+.testimonials_heading{
+    justify-content: center;
+    text-align: center;
+    padding: auto;
+    color: #cb65c5;
+}
+
+.all_testimonials{
+    display: flexbox;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.customer_reviews {
+    font-size: 18px;
+    margin-right: 25px;
+}
+
+.fa {
+    font-size: 25px;
+}
+
+.checked {
+    color: #6c6fed;
+}
+
+.side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+}
+
+.middle {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+}
+
+.right {
+    text-align: right;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+
+.bar-5 {width: 96%; height: 18px; background-color: #6c6fed;}
+.bar-4 {width: 0%; height: 18px;}
+.bar-3 {width: 0%; height: 18px;}
+.bar-2 {width: 4%; height: 18px; background-color: #6c6fed;}
+.bar-1 {width: 0%; height: 18px;}
+
+.speech{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    line-height: 150%;
+    background-color: #fff;
+    border: solid #cb65c5;
+    border-radius: 10px;
+    }
+
+    #ratings{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top:30px;
+    }
+
+    #rating_1, .customer_rating{
+        border-radius:30px 30px 0px 30px;
+        width: 40%;
+        padding: 2%;
+    }
+
+    .customer_rating{
+        padding-left:50px;
+        padding-right:30px;
+    }
+
+    #rating_2{
+        margin-top:30px;
+        padding-bottom:50px;
+        display: flex;
+        justify-content:space-evenly;
+    }
+
+    #jamila, #lucas{
+        border-radius:30px 30px 0px 30px;
+        width: 40%;
+        padding: 2%;
+    }
+
+    #about_us{
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    #date{
+        color: black;
+        font-size: small;
+        padding-left: 10px;
+    }
+
+    #name{
+        text-align: right;
+    }
+
+    .purple{
+        color: #cb65c5;
+    }
+
+    .blue{
+        color: #6c6fed;
+    }
+
+/*Footer Starts Here*/
+
+.footer {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root {
+  --primary-color: #24d292;
+  --secondary-color: #000;
+}
+
+.dark__mode {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+.show {
+  display: inline;
+}
+
+.hide {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  box-shadow: 0 16px 70px -8px rgba(10 10 10.25);
+  border-radius: 20px 20px 0 0;
+  transition: background 0.3s linear;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 30px 40px;
+  margin: auto;
+}
+
+.content__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.profile .logo__area {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.profile .logo__area img {
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+
+}
+
+.logo__area .logo__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 1rem;
+  color: var(--secondary-color);
+}
+
+.logo__area>button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.logo__area .sun {
+  color: #fff;
+  font-size: 22px;
+}
+
+.desc__area {
+  max-width: 320px;
+  margin-bottom: 1.25rem;
+}
+
+.desc__area p {
+  color: #d558c8;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.social__media a {
+  color: #d558c8;
+  margin-right: 22px;
+  font-size: 24px;
+}
+
+.social__media a:hover {
+  color: #313131;
+}
+
+.service__area {
+  display: flex;
+}
+
+.service__header {
+  margin: 40px;
+  display: block;
+}
+
+li.service__name {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.service__header li a {
+  color: #d558c8;
+  padding-bottom: 1px;
+  font-weight: 400;
+}
+
+.service__header li a:hover {
+  color: #d558c8;
+}
+
+.service__header li {
+  margin-bottom: 10px;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background-color: #ff0000;
+  margin-bottom: 1rem;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.copy__right {
+  color: #d558c8;
+  display: flex;
+  align-items: center;
+}
+
+.copy__right span {
+  margin-left: 8px;
+  font-weight: 400;
+  letter-spacing: 0.135rem;
+}
+
+.tou a {
+  color: #d558c8;
+  margin-left: 1.5rem;
+}
+
+.tou a:hover {
+  color: #313131;
+}
+
+footer container .content__footer .move-up{
+  position: absolute;
+  right: 6%;
+  top: 200px;
+}
+
+
+footer .move-up span a {
+  color: #6c6fed;
+}
+
+footer .move-up span:hover{
+  color: #6c6fed;
+  cursor: pointer;
+}
